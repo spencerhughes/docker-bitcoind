@@ -10,7 +10,7 @@ RUN apt-get -qq update && \
 		apt-utils \
 		apt-transport-https \
 	&& \
-	apt-get -qq autoremove \
+	apt-get -qq autoremove && \
 	apt-get -qq clean
 
 ARG BTC_VERSION=0.17.1
