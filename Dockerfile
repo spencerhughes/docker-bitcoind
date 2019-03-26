@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -qq update && \
 	apt-get -qq upgrade && \
-	apt-get -qq \
+	apt-get -qq install \
 		curl \
 		gnupg2 \
 		apt-utils \
